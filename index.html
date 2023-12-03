@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../MEDIA/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <div class="topHalf">
+        <div class="leftSide">
+          <div class="balance">
+            <p>My balance</p>
+            <h2 id="Balance">$921.48</h2>
+          </div>
+        </div>
+        <div class="rightSide">
+          <img src="../MEDIA/logo.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="bottomHalf">
+        <div class="bottomHalfUp">
+          <h2 id="Spending">Spending - Last 7 days</h2>
+          <div class="cols">
+            <div class="col" id="col-1" data-price="$17.45"></div>
+            <div class="col" id="col-2" data-price="$34.91"></div>
+            <div class="col" id="col-3" data-price="$52.36"></div>
+            <div class="col" id="col-4" data-price="$31.07"></div>
+            <div class="col" id="col-5" data-price="$23.39"></div>
+            <div class="col" id="col-6" data-price="$43.28"></div>
+            <div class="col" id="col-7" data-price="$25.48"></div>
+          </div>
+          <ul id="days">
+            <li>mon</li>
+            <li>tue</li>
+            <li>wed</li>
+            <li>thu</li>
+            <li>fri</li>
+            <li>sat</li>
+            <li>sun</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="bottomHalfDown">
+          <div class="bottomHalfLeftSide">
+            <p id="Total1">Total this month</p>
+            <h2 id="Money">$478.33</h2>
+          </div>
+          <div class="bottomHalfRightSide">
+            <p id="Percentage">+2.4%</p>
+            <p id="Total2">from last month</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nélia Semedo Silva</a>.
+    </footer>
+
+    <script href="../JS/script.js"></script>
+  </body>
+</html>

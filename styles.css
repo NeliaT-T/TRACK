@@ -1,0 +1,378 @@
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'Red Hat Display', sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 9rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topHalf {
+    background: hsl(10, 79%, 65%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15rem;
+    padding: .1rem 2.3rem 0;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+#Balance {
+    margin-top: -.6rem;
+}
+
+.bottomHalf {
+    background: hsl(33, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+#Spending {
+    padding-bottom: 3rem;
+    padding-top: .5rem;
+    font-weight: 700;
+}
+
+.cols {
+    display: grid; 
+    grid-template-columns: 2.8rem 2.8rem 2.8rem 
+    2.8rem 2.8rem 2.8rem 2.8rem;
+    gap: 1rem;
+    margin-left: -11px;
+}
+
+.col {
+    border-radius: .4rem;
+    height: 4vh;
+    position: relative; 
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
+#col-1 {
+    background-color: hsl(10, 79%, 65%);
+    height: 4.6vh;
+    top: 4.8rem;
+    position: relative;
+}
+
+#col-1::before,
+#col-1::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-1::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-1:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-1:hover::before {
+    --scale: 1;
+}
+
+#col-2 {
+    background-color: hsl(10, 79%, 65%);
+    height: 7.8vh;
+    top: 2.903rem;
+}
+
+#col-2::before,
+#col-2::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-2::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-2:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-2:hover::before {
+    --scale: 1;
+}
+
+#col-3 {
+    background-color: hsl(186, 34%, 60%);
+    height: 12.5vh;
+    top: auto;
+}
+
+#col-3::before,
+#col-3::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-3::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-3:hover {
+    background-color: hsla(186, 34%, 60%, 0.60);
+    cursor: pointer;
+}
+
+#col-3:hover::before {
+    --scale: 1;
+}
+
+#col-4 {
+    background-color: hsl(10, 79%, 65%);
+    height: 7vh;
+    top: 3.34rem;
+}
+
+#col-4::before,
+#col-4::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-4::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-4:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-4:hover::before {
+    --scale: 1;
+}
+
+#col-5 {
+    background-color: hsl(10, 79%, 65%);
+    height: 5.5vh;
+    top: 4.27rem;
+}
+
+#col-5::before,
+#col-5::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-5::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-5:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-5:hover::before {
+    --scale: 1;
+}
+
+#col-6 {
+    background-color: hsl(10, 79%, 65%);
+    height: 9.5vh;
+    top: 1.87rem;
+}
+
+#col-6::before,
+#col-6::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-6::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-6:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-6:hover::before {
+    --scale: 1;
+}
+
+#col-7 {
+    background-color: hsl(10, 79%, 65%);
+    height: 6.5vh;
+    top: 3.68rem;
+}
+
+#col-7::before,
+#col-7::after {
+    --scale: 0;
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translate(-50%, -100%) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+}
+
+#col-7::before {
+    content: attr(data-price);
+    color: #fff;
+    background: hsl(25, 47%, 15%);
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#col-7:hover {
+    background-color: hsla(10, 79%, 65%, 0.6);
+    cursor: pointer;
+}
+
+#col-7:hover::before {
+    --scale: 1;
+}
+
+#days {
+    list-style: none;
+    display: grid; 
+    grid-template-columns: 2.7rem 2.7rem 2.7rem 
+    2.7rem 2.7rem 2.7rem 2.7rem;
+    gap: 1.14rem;
+    margin-left: -1rem;
+    margin-top: -.01rem;
+    padding-top: .5rem;
+    padding-bottom: .6rem;
+}
+
+#days:first-of-type {
+    margin-left: -2.6rem;
+}
+
+li {
+    color: hsl(28, 10%, 53%);
+    font-size: small;
+}
+
+hr {
+    width: 26rem;
+    border: 1px solid hsl(27, 66%, 92%);
+}
+
+.bottomHalfDown {
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+#Total1 {
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+}
+
+#Total2 {
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+}
+
+#Money {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+    margin-top: -.8rem;
+    padding-bottom: .6rem;
+}
+
+.bottomHalfRightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+#Percentage {
+    color: hsl(25, 47%, 15%);
+    font-weight: bolder;
+    margin-bottom: -.8rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
